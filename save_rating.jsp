@@ -1,0 +1,40 @@
+<%@page import="java.sql.*, java.util.Date,java.util.*,java.util.Calendar,java.text.*, java.util.TreeMap"%>
+<%
+		Connection con = null;
+		Class.forName("com.mysql.jdbc.Driver");
+		con= DriverManager.getConnection("jdbc:mysql://localhost/cse?user=root&password=cse");
+		PreparedStatement ps = null;
+		String qry;
+		String user=(String) session.getAttribute("user");
+		String s=request.getParameter("value");
+		String ansr_id=request.getParameter("ansr_id");
+		int value=Integer.parseInt(s);
+		qry="select * from answers where ansr_id=?";
+		ps=con.prepareStatement(qry);
+		ps.setString(1,ansr_id);
+		ResultSet result= ps.executeQuery();
+		result.next();
+		float old_rating=result.getFloat(6);
+		String old_rated_bys=result.getString(7);
+		String people[]=old_rated_bys.split(",");
+		int old_rated_by;
+		if(people[0]=="")old_rated_by=0;
+		else old_rated_by=people.length;
+		float new_rating;
+		if(old_rated_by==0)new_rating=value;
+		else new_rating=(((old_rating*old_rated_by)+value)/(old_rated_by+1));
+		qry="UPDATE answers SET rated_by=?,rating=? where ansr_id=?";
+		ps=con.prepareStatement(qry);
+		ps.setString(1,old_rated_bys+user+",");
+		ps.setFloat(2,new_rating);
+		ps.setString(3,ansr_id);
+		int output=ps.executeUpdate();
+		int final_rating;
+		if(new_rating==1.0) final_rating=1;
+		else if(new_rating==2.0) final_rating=2;
+		else if(new_rating==3.0) final_rating=3;
+		else if(new_rating==4.0) final_rating=4;
+		else if(new_rating==5.0) final_rating=5;
+		else final_rating=(int) new_rating+1;
+		out.println(final_rating);
+%>

@@ -1,0 +1,5 @@
+Get details
+Submit attendence
+Submit Marks
+Get Marks
+view statistics

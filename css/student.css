@@ -1,0 +1,336 @@
+#home:hover{
+	background-color:#7467c4;
+	border-radius:10px 10px 0px 0px;
+	color:white;
+	text-decoration:none;
+}
+body{
+	background:url(../images/img03.jpg) repeat;
+}
+#container{
+	display:block;
+	max-width:1200px;
+	min-height:850px;
+	border:2px solid black;
+	border-top:0px;
+	border-radius:0px 0px 25px 25px;
+	margin-top:-10px;
+	margin-left:65px;
+	background:white;
+	}
+#container .head{
+	height:150px;
+	display:block;
+	}
+#container .head #logo{
+	height:120px;
+	display:block;
+	}
+#container .head #logo #img{
+	margin-left:3px;
+	width:400px;
+	height:120px;
+	background-color:pink;
+	float:left;
+	border-radius:0px 0px 25px 0px;
+	}
+#container .head #logo #search{
+	margin-right:3px;
+	width:250px;
+	height:120px;
+	background-color:pink;
+	border-radius:0px 0px 0px 25px;
+	float:right;
+	}
+#container .head #menu{
+	background-color:#D2E8EA;
+	padding:5px 0px 0px 0px;
+	margin-left:3px;
+	margin-right:3px;
+	display:block;
+	height:30px;
+	border:1px solid black;
+	border-radius:0px 0px 10px 10px;
+	}
+#container .body{
+	
+	}
+#container .body #scrol{
+	margin-top:20px;
+	margin-left:3px;
+	margin-right:3px;
+	height:30px;
+	display:block;
+	border:0px dashed black;
+	}
+hr{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#5294C1 none repeat scroll 0 0;
+	border:bold none;
+	height:1px;
+	margin-top:5px;
+	padding:1px 0px;
+}
+#container .body #notices_menu{
+	margin-left:3px;
+	margin-top:7px;
+	width:150px;
+	min-height:600px;
+	border:1px solid #5294C1;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+	}
+#container .body #notices_menu ul{
+	font-size:10px;
+	list-style-type:none;
+	}
+#container .body #notices_menu ul li{
+	margin-left:-40px;
+	padding:5px 0px;
+	}
+#container .body #notices_menu ul li a{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	color:#333333;
+	display:block;
+	font-size:16px;
+	padding:7px 0 6px 40px;
+	width:110px;
+	text-decoration:none;
+	}
+#container .body #notices_menu ul li a:hover{
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#0066A7 none repeat scroll 0 0;
+	color:white;
+	text-decoration:none;
+	}
+#container .body #notices{
+	margin-left:153px;
+	margin-top:-602px;
+	width:901px;
+	min-height:600px;
+	border:1px solid #5294C1;
+	border-left:2px solid #5294C1;
+	border-right:0px;
+	border-bottom:0px;
+	}
+#container .quick_links{
+	margin-top:2px;
+	margin-bottom:2px;	
+	height:200px;
+	display:block;
+	background-color:#D3DEDF;
+	border:1px dashed blue;
+	border-left:0px;
+	border-right:0px;
+	}
+
+#container .footer{
+	margin-top:2px;
+	border-radius:0px 0px 25px 25px;
+	height:30px;
+	display:block;
+	background-color:#D3DEDF;
+	border:1px dashed blue;
+	}
+.qmfv{visibility:visible !important;}.qmfh{visibility:hidden !important;}
+
+		/*!!!!!!!!!!! QuickMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+		/*[START-QCC]*/.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}.qmmc {position:relative;zoom:1;z-index:10;}.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}.qmsh div a {float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc .qmcbox{cursor:default;display:inline-block;position:relative;z-index:1;}.qmmc .qmcbox a{display:inline;}.qmmc .qmcbox div{float:none;position:static;visibility:inherit;left:auto;}.qmmc li {z-index:auto;}.qmmc ul {left:-10000px;position:absolute;z-index:10;}.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}.qmmc li a {float:none;}.qmmc li:hover>ul{left:auto;}/*[END-QCC]*//*[START-QCC0]*/#qm0 ul {top:100%;}#qm0 ul li:hover>ul{top:0px;left:100%;}/*[END-QCC0]*/
+
+
+		/*!!!!!!!!!!! QuickMenu Styles [Please Modify!] !!!!!!!!!!!*/
+
+
+			/* QuickMenu 0 */
+
+			/*"""""""" (MAIN) Container""""""""*/	
+			#qm0	
+			{	
+				background-color:transparent;
+				margin-left:30px;
+			}
+
+
+			/*"""""""" (MAIN) Items""""""""*/	
+			#qm0 a	
+			{	
+				padding:5px 40px 5px 20px;
+				color:#1F1293;
+				font-family:Arial;
+				font-size:16px;
+				text-decoration:none;
+				font-weight:bold;
+				text-align:left;
+			}
+
+
+			/*"""""""" (MAIN) Parent Items""""""""*/	
+			#qm0 .qmparent	
+			{	
+				background-repeat:no-repeat;
+				background-position:9px 10px;
+			}
+
+
+			/*"""""""" (MAIN) Active State""""""""*/	
+			body #qm0 .qmactive, body #qm0 .qmactive:hover	
+			{	
+				color:#FFFFFF;
+				text-decoration:none;
+			}
+
+
+			/*"""""""" (SUB) Container""""""""*/	
+			#qm0 div, #qm0 ul	
+			{	
+				padding:5px;
+				margin:-2px 0px 0px -6px;
+				background-color:transparent;
+				border-width:1px;
+				border-style:none;
+				border-color:#A6A6A6;
+			}
+
+
+			/*"""""""" (SUB) Items""""""""*/	
+			#qm0 div a, #qm0 ul a	
+			{	
+				padding:5px 50px 5px 20px;
+				background-color:transparent;
+				color:#FFFFFF;
+				font-size:14px;
+				font-weight:bold;
+				border-width:0px;
+				border-style:none;
+				border-color:#000000;
+			}
+
+
+			/*"""""""" (SUB) Hover State""""""""*/	
+			#qm0 div a:hover	
+			{	
+				color:#7467C4;
+				text-decoration:none;
+			}
+
+
+			/*"""""""" (SUB) Hover State - (duplicated for pure CSS)""""""""*/	
+			#qm0 ul li:hover>a	
+			{	
+				color:#7467C4;
+				text-decoration:none;
+			}
+
+
+			/*"""""""" (SUB) Parent Items""""""""*/	
+			#qm0 div .qmparent, #qm0 ul .qmparent	
+			{	
+
+			}
+
+
+			/*"""""""" (SUB) Parent Hover State""""""""*/	
+			#qm0 div .qmparent:hover	
+			{	
+
+			}
+
+
+			/*"""""""" (SUB) Active State""""""""*/	
+			body #qm0 div .qmactive, body #qm0 div .qmactive:hover	
+			{	
+				background-color:#747A86;
+				color:#EEEEEE;
+			}
+
+
+			/*"""""""" Individual Titles""""""""*/	
+			#qm0 .qmtitle	
+			{	
+				font-size:11px;
+			}
+
+
+			/*"""""""" Box Animation Styles""""""""*/	
+			#qm0 .qmbox	
+			{	
+				border-width:2px;
+				border-style:dotted;
+				border-color:#999999;
+			}
+
+
+			/*"""""""" (main) Rounded Items""""""""*/	
+			#qm0 .qmritem span	
+			{	
+				border-color:#A6A6A6;
+				background-color:#7467C4;
+				background-repeat:no-repeat;
+				background-position:9px 5px;
+			}
+
+
+			/*"""""""" (main) Rounded Items Content""""""""*/	
+			#qm0 .qmritemcontent	
+			{	
+				padding:0px 0px 0px 20px;
+			}
+
+
+			/*"""""""" (sub) Rounded Items""""""""*/	
+			#qm0 div .qmritem span	
+			{	
+				border-color:#666666;
+				background-color:#EEEEEE;
+			}
+
+
+			/*"""""""" (sub) Rounded Items Content""""""""*/	
+			#qm0 div .qmritemcontent	
+			{	
+				padding:0px 0px 0px 4px;
+			}
+
+
+			/*"""""""" Sub Hover Fill Items [Static]""""""""*/	
+			#qm0 div .qmhoverfill	
+			{	
+				background-color:#C0CAE3;
+			}
+
+
+			/*"""""""" Custom Rule""""""""*/	
+			div#qm0 div div	
+			{	
+				margin:0px 0px 0px -6px;
+			}
+
+
+			/*"""""""" Custom Rule""""""""*/	
+			ul#qm0 li:hover > a	
+			{	
+				background-color:#7467C4;
+			}
+
+
+			/*"""""""" Custom Rule""""""""*/	
+			ul#qm0 ul	
+			{	
+				background-color:#EF3823;
+			}
+
+
+			/*"""""""" Custom Rule""""""""*/	
+			ul#qm0 ul li:hover > a	
+			{	
+				color:#1F1293;
+			}
+			/*[END-QS0]*/
+
